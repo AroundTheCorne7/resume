@@ -529,6 +529,214 @@ html {
     padding: 2rem 0;
 }
 
+/* Print Styles for PDF Generation */
+@media print {
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+
+    body {
+        font-size: 12px;
+        line-height: 1.4;
+        color: #000;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 20px 0;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+        -webkit-print-color-adjust: exact;
+        page-break-after: avoid;
+    }
+
+    .hero-content {
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+
+    .hero-buttons {
+        display: none;
+    }
+
+    .profile-placeholder {
+        width: 150px;
+        height: 150px;
+        font-size: 2rem;
+    }
+
+    .section {
+        padding: 20px 0;
+        page-break-inside: avoid;
+    }
+
+    .section-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        page-break-after: avoid;
+    }
+
+    .timeline-item {
+        margin-bottom: 15px;
+        page-break-inside: avoid;
+    }
+
+    .timeline::before {
+        display: none;
+    }
+
+    .timeline-dot {
+        display: none;
+    }
+
+    .timeline-content {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 10px;
+        text-align: left !important;
+        box-shadow: none;
+        border: 1px solid #e2e8f0;
+    }
+
+    .timeline-content h3 {
+        font-size: 14px;
+        margin-bottom: 4px;
+    }
+
+    .timeline-content h4 {
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .timeline-content p {
+        font-size: 11px;
+        margin: 8px 0;
+    }
+
+    .timeline-content ul {
+        margin: 8px 0;
+    }
+
+    .timeline-content li {
+        font-size: 10px;
+        margin-bottom: 3px;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .skill-category {
+        padding: 10px;
+        box-shadow: none;
+        border: 1px solid #e2e8f0;
+        page-break-inside: avoid;
+    }
+
+    .skill-category h3 {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .skill-tag {
+        font-size: 9px;
+        padding: 3px 6px;
+        margin: 2px;
+    }
+
+    .about-stats {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .stat {
+        padding: 8px;
+        box-shadow: none;
+        border: 1px solid #e2e8f0;
+    }
+
+    .stat h3 {
+        font-size: 18px;
+    }
+
+    .stat p {
+        font-size: 10px;
+    }
+
+    .education-item {
+        padding: 10px;
+        box-shadow: none;
+        border: 1px solid #e2e8f0;
+        page-break-inside: avoid;
+    }
+
+    .education-content h3 {
+        font-size: 12px;
+    }
+
+    .education-content h4 {
+        font-size: 11px;
+    }
+
+    .education-content p {
+        font-size: 10px;
+    }
+
+    .contact-form {
+        display: none;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-item {
+        margin-bottom: 8px;
+    }
+
+    .contact-item h4 {
+        font-size: 11px;
+    }
+
+    .contact-item p {
+        font-size: 10px;
+    }
+
+    .social-links {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .bg-light {
+        background: #f8fafc !important;
+        -webkit-print-color-adjust: exact;
+    }
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hamburger {
