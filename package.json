@@ -7,6 +7,7 @@
     "start": "npx serve .",
     "dev": "npx live-server .",
     "build": "echo 'No build process needed for static site'",
+    "generate-pdf": "node generate-pdf.js",
     "deploy:netlify": "npx netlify deploy --prod",
     "deploy:vercel": "npx vercel --prod",
     "validate": "npx html-validate index.html && npx stylelint styles.css",
@@ -25,7 +26,8 @@
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.2",
-    "serve": "^14.2.1"
+    "serve": "^14.2.1",
+    "puppeteer": "^21.0.0"
   },
   "repository": {
     "type": "git",

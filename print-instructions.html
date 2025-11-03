@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate PDF Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .step {
+            background: #f8fafc;
+            border-left: 4px solid #2563eb;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .step h3 {
+            margin-top: 0;
+            color: #2563eb;
+        }
+        .button {
+            background: #2563eb;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            display: inline-block;
+            margin: 10px 5px;
+        }
+        .button:hover {
+            background: #1d4ed8;
+        }
+        .warning {
+            background: #fef3c7;
+            border: 1px solid #f59e0b;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+        .success {
+            background: #d1fae5;
+            border: 1px solid #10b981;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📄 Generate Your Professional CV PDF</h1>
+        <p>Follow these simple steps to create a perfect PDF from your website</p>
+    </div>
+
+    <div class="step">
+        <h3>Step 1: Open Your CV Website</h3>
+        <p>Click the button below to open your professional CV website:</p>
+        <a href="https://lambent-praline-0de0d7.netlify.app/" target="_blank" class="button">
+            🌐 Open CV Website
+        </a>
+        <p><small>This will open your live website in a new tab</small></p>
+    </div>
+
+    <div class="step">
+        <h3>Step 2: Print to PDF</h3>
+        <p>Once the website loads:</p>
+        <ol>
+            <li>Press <strong>Ctrl+P</strong> (or Cmd+P on Mac)</li>
+            <li>In the print dialog, select <strong>"Save as PDF"</strong> as destination</li>
+            <li>Configure these settings:
+                <ul>
+                    <li><strong>Paper size:</strong> A4</li>
+                    <li><strong>Margins:</strong> Minimum</li>
+                    <li><strong>Scale:</strong> Fit to page width</li>
+                    <li><strong>Background graphics:</strong> ✅ <strong>ENABLED</strong> (Very Important!)</li>
+                </ul>
+            </li>
+            <li>Click <strong>"Save"</strong></li>
+        </ol>
+    </div>
+
+    <div class="warning">
+        <h3>⚠️ Important Settings</h3>
+        <p><strong>Make sure "Background graphics" is ENABLED</strong> - this ensures your beautiful gradient header and colors are included in the PDF!</p>
+    </div>
+
+    <div class="step">
+        <h3>Step 3: Save with Professional Name</h3>
+        <p>Save your PDF with a professional filename like:</p>
+        <ul>
+            <li><code>Kiril_Petrov_Senior_Java_Engineer_CV.pdf</code></li>
+            <li><code>Kiril_Petrov_Resume_2024.pdf</code></li>
+            <li><code>KirilPetrov_JavaEngineer_CV.pdf</code></li>
+        </ul>
+    </div>
+
+    <div class="success">
+        <h3>✅ Alternative: PDF-Optimized Version</h3>
+        <p>For the best PDF quality, you can also use our specially optimized version:</p>
+        <a href="pdf-version.html" target="_blank" class="button">
+            📋 Open PDF-Optimized Version
+        </a>
+        <p>This version is specifically designed for PDF generation with perfect formatting.</p>
+    </div>
+
+    <div class="step">
+        <h3>Step 4: Replace the Download Link</h3>
+        <p>Once you have your new PDF:</p>
+        <ol>
+            <li>Save the PDF file in your project folder</li>
+            <li>Name it exactly: <code>Kiril_Petrov_CV.pdf</code></li>
+            <li>The website will automatically use this new PDF for downloads</li>
+        </ol>
+    </div>
+
+    <script>
+        // Auto-open the CV website after 2 seconds
+        setTimeout(() => {
+            if (confirm('Would you like to open your CV website now to generate the PDF?')) {
+                window.open('https://lambent-praline-0de0d7.netlify.app/', '_blank');
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

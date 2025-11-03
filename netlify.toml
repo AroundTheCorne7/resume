@@ -40,12 +40,17 @@
 # Redirect rules
 [[redirects]]
   from = "/resume"
-  to = "/KirilPetrovResume (4) (1).pdf"
+  to = "/Kiril_Petrov_CV.pdf"
   status = 200
 
 [[redirects]]
   from = "/cv"
-  to = "/KirilPetrovResume (4) (1).pdf"
+  to = "/Kiril_Petrov_CV.pdf"
+  status = 200
+
+[[redirects]]
+  from = "/pdf"
+  to = "/Kiril_Petrov_CV.pdf"
   status = 200
 
 # Form handling (for contact form)
